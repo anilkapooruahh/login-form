@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./assets/Norse-Bold.otf") format("opentype");
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+}
+
+.sideimage {
+    grid-column: 0/1;
+    background-image: url("./assets/halie-west-25xggax4bSA-unsplash.jpg");
+    z-index: 0;
+    min-height: 100vh;
+    max-width: 30vw;
+    padding-top: 15rem;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: inherit;
+    max-height: 20vh;
+}
+
+.sidebar > img {
+    max-width: 30vw;
+    max-height: inherit;  
+}
+
+.sidebar > h1 {
+    color: antiquewhite;
+    font-family: 'Norse-Bold';
+    font-size: 4rem;
+}
+
+.form__grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr; 
+   row-gap: 10px;
+   column-gap: 10px;
+}
+
+.form-wrapper{
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+button[type="submit"] {
+    width: 10rem;
+    height: 2rem;
+    font-size: large;
+    margin: 5rem;
+}
+
+.form__element {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.form__element > label {
+    grid-row: 1/2;
+}
+
+.form__element > input {
+    grid-row: 0/1;
+}
+
+
+
